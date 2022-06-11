@@ -50,13 +50,27 @@ return packer.startup(function(use)
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     -- Plugins go here
-    -- colorschemes
-    -- use 'w0ng/vim-hybrid'
-    -- use 'sainnhe/everforest'
+    -- color schemes
+    use 'w0ng/vim-hybrid'
+    use 'sainnhe/everforest'
     use 'sainnhe/gruvbox-material'
-    -- use 'NLKNguyen/papercolor-theme'
-    -- use 'joshdick/onedark.vim'
+    use 'morhetz/gruvbox'
+    use 'NLKNguyen/papercolor-theme'
+    use 'joshdick/onedark.vim'
     use 'tomasiser/vim-code-dark'
+    -- color schemes
+    
+    -- Auto completion and LSP
+    use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+    use 'L3MON4D3/LuaSnip'
+    use 'saadparwaiz1/cmp_luasnip'
+
+
     if packer_bootstrap then
         require('packer').sync()
     end

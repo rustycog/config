@@ -59,16 +59,20 @@ return packer.startup(function(use)
     use 'joshdick/onedark.vim'
     use 'tomasiser/vim-code-dark'
     -- color schemes
-    
+
     -- Auto completion and LSP
-    use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+
+    -- Snip engine
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
+
+    -- LSP
+    use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
 
     if packer_bootstrap then

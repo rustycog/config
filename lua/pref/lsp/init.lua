@@ -6,5 +6,5 @@ end
 
 require('nvim-lsp-installer').setup {}
 lspconfig.pyright.setup {}
-lspconfig.sumneko_lua.setup {}
+--lspconfig.sumneko_lua.setup {}
 

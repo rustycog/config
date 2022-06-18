@@ -49,7 +49,17 @@ return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
+    
     -- Plugins go here
+    use 'lewis6991/gitsigns.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    use 'kyazdani42/nvim-tree.lua'
+    use 'akinsho/bufferline.nvim'
+    use 'moll/vim-bbye'
+    use 'nvim-lualine/lualine.nvim'
+    use 'lukas-reineke/indent-blankline.nvim'
+
+
     -- color schemes
     use 'w0ng/vim-hybrid'
     use 'sainnhe/everforest'
@@ -60,12 +70,14 @@ return packer.startup(function(use)
     use 'tomasiser/vim-code-dark'
     -- color schemes
 
-    -- Auto completion and LSP
+    -- Auto completion
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    use 'windwp/nvim-autopairs'
+--    use 'numToStr/Comment.nvim'
 
     -- Snip engine
     use 'L3MON4D3/LuaSnip'
@@ -74,7 +86,18 @@ return packer.startup(function(use)
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
+    use 'jose-elias-alvarez/null-ls.nvim'
 
+    -- Telescope
+    use 'nvim-telescope/telescope.nvim'
+
+    -- Tree-sitter
+    use { 
+        'nvim-treesitter/nvim-treesitter',
+        run = ":TSUpdate",
+    }
+ --   use 'JoosepAlviste/nvim-ts-context-commentstring'
+    
     if packer_bootstrap then
         require('packer').sync()
     end

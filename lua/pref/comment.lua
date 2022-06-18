@@ -1,5 +1,6 @@
 local status_ok, comment = pcall(require, "Comment")
 if not status_ok then
+    print 'comment loading error!'
     return
 end
 
@@ -19,7 +20,7 @@ comment.setup {
         -- g<b uncomment current line using block mode 
         -- g> comment region using line mode
         -- g< uncomment region using line mode
-        extended = true,
+        extended = false,
     },
     pre_hook = function(ctx)
         local U = require "Comment.utils"

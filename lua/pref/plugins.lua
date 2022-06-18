@@ -58,6 +58,7 @@ return packer.startup(function(use)
     use 'moll/vim-bbye'
     use 'nvim-lualine/lualine.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
+    use 'folke/which-key.nvim'
 
 
     -- color schemes
@@ -90,6 +91,7 @@ return packer.startup(function(use)
 
     -- Telescope
     use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-project.nvim'
 
     -- Tree-sitter
     use { 

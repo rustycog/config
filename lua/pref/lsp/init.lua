@@ -4,7 +4,5 @@ if not lsp_status_ok then
     return
 end
 
-require('nvim-lsp-installer').setup {}
-lspconfig.pyright.setup {}
---lspconfig.sumneko_lua.setup {}
-
+require('pref.lsp.lsp-installer')
+require('pref.lsp.handlers').setup()

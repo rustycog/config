@@ -80,7 +80,7 @@ return packer.startup(function(use)
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
     use 'windwp/nvim-autopairs'
---    use 'numToStr/Comment.nvim'
+    use 'numToStr/Comment.nvim'
 
     -- Snip engine
     use 'L3MON4D3/LuaSnip'
@@ -93,14 +93,13 @@ return packer.startup(function(use)
 
     -- Telescope
     use 'nvim-telescope/telescope.nvim'
-    -- use 'nvim-telescope/telescope-project.nvim'
 
     -- Tree-sitter
     use { 
         'nvim-treesitter/nvim-treesitter',
         run = ":TSUpdate",
     }
- --   use 'JoosepAlviste/nvim-ts-context-commentstring'
+   use 'JoosepAlviste/nvim-ts-context-commentstring'
     
     if packer_bootstrap then
         require('packer').sync()

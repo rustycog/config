@@ -60,6 +60,7 @@ return packer.startup(function(use)
     use 'edkolev/tmuxline.vim'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'folke/which-key.nvim'
+    use 'ahmedkhalf/project.nvim'
 
 
     -- color schemes
@@ -92,7 +93,7 @@ return packer.startup(function(use)
 
     -- Telescope
     use 'nvim-telescope/telescope.nvim'
-    use 'nvim-telescope/telescope-project.nvim'
+    -- use 'nvim-telescope/telescope-project.nvim'
 
     -- Tree-sitter
     use { 

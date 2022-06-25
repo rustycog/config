@@ -61,6 +61,7 @@ return packer.startup(function(use)
     use 'lukas-reineke/indent-blankline.nvim'
     use 'folke/which-key.nvim'
     use 'ahmedkhalf/project.nvim'
+	use 'akinsho/toggleterm.nvim'
 
 
     -- color schemes
@@ -99,8 +100,10 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ":TSUpdate",
     }
-   use 'JoosepAlviste/nvim-ts-context-commentstring'
-    
+	use 'JoosepAlviste/nvim-ts-context-commentstring'
+	-- DAP
+	-- use 'mfussenegger/nvim-dap'
+
     if packer_bootstrap then
         require('packer').sync()
     end
